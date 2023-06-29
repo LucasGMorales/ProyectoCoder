@@ -1,0 +1,50 @@
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Estilo header */
+header a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.header-conjunto {
+    background-color: #333;
+    color: #ffffff;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1{
+    
+}
+
+header nav{
+grid-column: span 2;
+}
+ul li{
+justify-content: center;
+list-style: none;
+margin-bottom: 1rem;
+}
+
+
+
+@media screen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
