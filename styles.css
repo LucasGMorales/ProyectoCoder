@@ -31,7 +31,7 @@ padding: 4px;
 margin-top: -15px;
 }
 
-.header-conjunto {
+.header-conjunto{
     background: linear-gradient(#18131f, #5e5170);
     color: #ffffff;
     align-items: center;
@@ -131,7 +131,7 @@ align-items: center;
     width: 90%;
     height: auto;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 
@@ -140,7 +140,8 @@ align-items: center;
     background: linear-gradient(#18131f, #5e5170);
     border-radius: 20px;
     position:absolute; 
-    bottom: 20px; 
+    bottom: 40px; 
+    left: 45%;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
@@ -155,8 +156,37 @@ align-items: center;
     padding: 8px;
 }
 
+/* seccion menu dia/noche */
 
+.menu-img{
+    display: none;
+}
 
+.menu-img-mobile{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100vw;
+    padding-right: 1rem;
+}
+
+/* seccion ubicacion */
+.main-ubicacion{
+display: flex;
+align-content: center;
+text-align: center;
+justify-content: center;
+}
+.main-ubicacion-caja{
+    width: 100vw;
+}
+.main-section-ubicacion{
+
+    align-items: center;
+}
+
+/*media 1200px*/
 @media (min-width:1200px) {
 
     .header-conjunto {
@@ -191,11 +221,6 @@ font-size: 1.3rem;
 margin-bottom: 1rem;
 margin-left: 3rem;
 display: flex;
-    }
-
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 .footer-masa{
     display:flex;
@@ -207,7 +232,75 @@ footer{
     grid-template-areas: 
     " telefono masa whatsapp"
     "direccion masa instagram";
+
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* Fotos comida index */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+    margin: 25px;
 }
 
-}   /* ------------  fin media 1200px ------------*/
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.descripcion  {
+    background: linear-gradient(#18131f, #5e5170);
+    border-radius: 20px;
+    position:absolute; 
+    bottom: 40px; 
+    left: 45%;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.descripcion:hover{
+    background:linear-gradient(#ffffff00, #5e517000 );
+    border: 2px solid #089841;
+    color: #089841;
+    border-radius: 20px;
+    padding: 8px;
+}
+.menu-img{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    grid-column: span 2;
+
+}
+
+.menu-img-mobile{
+    display: none;
+}
+
+
+.main-ubicacion-caja{
+    width: 80vw;
+}
+
+
+
+
+}
+/* ------------  fin media 1200px ------------*/
 
