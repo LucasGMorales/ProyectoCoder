@@ -1,0 +1,20 @@
+.main-ubicacion{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    }
+    .main-ubicacion-caja{
+        width: 100vw;
+    }
+    .main-section-ubicacion{
+    
+        align-items: center;
+    }
+
+    @media (min-width:1200px){
+        .main-ubicacion-caja{
+            width: 80vw;
+        }
+    }
+    

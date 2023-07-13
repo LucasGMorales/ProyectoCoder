@@ -1,0 +1,30 @@
+.btn-color:hover {
+    border: 2.5px solid #089841;
+    color: #089841;
+    border-radius: 20px;
+    padding: 4px;
+}
+@media (min-width:1200px) {
+    .btn-color:hover {
+        margin-top: -15px;
+    }
+    .descripcion {
+        background: linear-gradient(#18131f, #5e5170);
+        border-radius: 20px;
+        position: absolute;
+        bottom: 40px;
+        left: 45%;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 30px;
+    }
+    .descripcion:hover {
+        background: linear-gradient(#ffffff00, #5e517000);
+        border: 2px solid #089841;
+        color: #089841;
+        border-radius: 20px;
+        padding: 8px;
+    }
+}

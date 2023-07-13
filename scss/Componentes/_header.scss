@@ -1,0 +1,43 @@
+header a {
+    color: #089841;
+    text-decoration: none;
+}
+.titulo-color-rojo{
+    color: #dc0d13;
+}
+.header-conjunto{
+    background: linear-gradient(#18131f, #5e5170);
+    color: #ffffff;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+    height: 140px;
+}
+.header-horario{
+    display: none;
+}
+.header-horario-noche{
+    display: none;
+}
+@media (min-width:1200px){
+    .header-conjunto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .header-horario {
+        color: #089841;
+        font-size: 1,8rem;
+        font-style: italic;
+        font-weight: bold;
+        display: block;
+    }
+    .header-horario-noche{
+        color: #089841;
+        font-size: 1,8px;
+        font-style: italic;
+        font-weight: bold;
+        display: block;
+        margin-top: -15px;  
+    }
+}

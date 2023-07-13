@@ -1,0 +1,31 @@
+header nav {
+    grid-column: span 2;
+}
+nav{
+display: flex;
+justify-content: center;
+grid-column:span 2;
+}
+ul{
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    ul li {
+        display: flex;
+        list-style: none;
+        font-size: 0.9rem;
+        margin-right: 1rem;
+        }
+}
+@media (min-width:1200px){
+    header nav {
+        grid-column: span 2;
+    }   
+    ul li {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+        display: flex;
+        }
+}
