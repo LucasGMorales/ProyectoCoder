@@ -15,7 +15,7 @@
     border-radius: 50px;
 }
 .descripcion {
-    background: linear-gradient(#18131f, #5e5170);
+    background: linear-gradient(#000000, $c-gradient-violeta);
     border-radius: 20px;
     position:absolute; 
     bottom: 40px; 
@@ -26,9 +26,9 @@
     padding: 10px;
 }
 .descripcion:hover{
-    background:linear-gradient(#ffffff00, #5e517000 );
-    border: 2px solid #089841;
-    color: #089841;
+    background:linear-gradient(#00000000, #5e517000 );
+    border: 2px solid $c-primario-verde;
+    color: $c-primario-verde;
     border-radius: 20px;
     padding: 8px;
 }

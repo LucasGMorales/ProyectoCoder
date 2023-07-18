@@ -1,15 +1,18 @@
 .btn-color:hover {
-    border: 2.5px solid #089841;
-    color: #089841;
+    border: 2.5px solid $c-primario-verde;
+    color: $c-primario-verde;
     border-radius: 20px;
-    padding: 4px;
+    padding: 4px;;
+    transition-property: initial;
+    transition-duration: 1s;
+
 }
 @media (min-width:1200px) {
     .btn-color:hover {
         margin-top: -15px;
     }
     .descripcion {
-        background: linear-gradient(#18131f, #5e5170);
+        background: linear-gradient(#000000, $c-gradient-violeta);
         border-radius: 20px;
         position: absolute;
         bottom: 40px;
@@ -21,10 +24,12 @@
         font-size: 30px;
     }
     .descripcion:hover {
-        background: linear-gradient(#ffffff00, #5e517000);
-        border: 2px solid #089841;
-        color: #089841;
+        background: linear-gradient(#00000000, #5e517000);
+        border: 2px solid $c-primario-verde;
+        color: $c-primario-verde;
         border-radius: 20px;
         padding: 8px;
+        transition-property: initial;
+        transition-duration: 1s;
     }
 }

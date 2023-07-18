@@ -21,6 +21,8 @@ main section img {
   color: #089841;
   border-radius: 20px;
   padding: 4px;
+  transition-property: initial;
+  transition-duration: 1s;
 }
 
 @media (min-width: 1200px) {
@@ -28,7 +30,7 @@ main section img {
     margin-top: -15px;
   }
   .descripcion {
-    background: linear-gradient(#18131f, #5e5170);
+    background: linear-gradient(#000000, #5e5170);
     border-radius: 20px;
     position: absolute;
     bottom: 40px;
@@ -40,15 +42,17 @@ main section img {
     font-size: 30px;
   }
   .descripcion:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(94, 81, 112, 0));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(94, 81, 112, 0));
     border: 2px solid #089841;
     color: #089841;
     border-radius: 20px;
     padding: 8px;
+    transition-property: initial;
+    transition-duration: 1s;
   }
 }
 footer {
-  background: linear-gradient(#18131f, #5e5170);
+  background: linear-gradient(#000000, #5e5170);
   color: #ffffff;
   align-items: center;
   max-width: 100%;
@@ -101,7 +105,7 @@ header a {
 }
 
 .header-conjunto {
-  background: linear-gradient(#18131f, #5e5170);
+  background: linear-gradient(#000000, #5e5170);
   color: #ffffff;
   align-items: center;
   max-width: 100%;
@@ -192,7 +196,7 @@ ul ul li {
 }
 
 .descripcion {
-  background: linear-gradient(#18131f, #5e5170);
+  background: linear-gradient(#000000, #5e5170);
   border-radius: 20px;
   position: absolute;
   bottom: 40px;
@@ -204,7 +208,7 @@ ul ul li {
 }
 
 .descripcion:hover {
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(94, 81, 112, 0));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(94, 81, 112, 0));
   border: 2px solid #089841;
   color: #089841;
   border-radius: 20px;
@@ -308,11 +312,11 @@ ul ul li {
   display: flex;
   align-self: center;
   text-align: center;
-  background: linear-gradient(#18131f, #5e5170);
+  background: linear-gradient(#000000, #5e5170);
   color: #fff;
   border-radius: 20px;
   padding: 8px;
-  border: 2.5px linear-gradient(#18131f, #5e5170);
+  border: 2.5px linear-gradient(#000000, #5e5170);
 }
 
 .main-form-button:hover {
@@ -321,6 +325,8 @@ ul ul li {
   color: #089841;
   border-radius: 20px;
   padding: 8px;
+  transition-property: initial;
+  transition-duration: 1s;
 }
 
 @media (min-width: 1200px) {

@@ -24,18 +24,20 @@
     display: flex;
     align-self: center;
     text-align: center;
-    background: linear-gradient(#18131f, #5e5170);
+    background: linear-gradient(#000000, $c-gradient-violeta);
     color: #fff;
     border-radius: 20px;
     padding: 8px;
-    border: 2.5px linear-gradient(#18131f, #5e5170);;
+    border: 2.5px linear-gradient(#000000, $c-gradient-violeta);;
 }
 .main-form-button:hover{
 background: none;
-border: 2.5px solid #089841;
-color: #089841;
+border: 2.5px solid $c-primario-verde;
+color: $c-primario-verde;
 border-radius: 20px;
 padding: 8px;
+transition-property: initial;
+transition-duration: 1s;
 }
 @media (min-width:1200px){
     .main-info{

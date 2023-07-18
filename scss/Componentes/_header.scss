@@ -1,12 +1,12 @@
 header a {
-    color: #089841;
+    color: $c-primario-verde;
     text-decoration: none;
 }
 .titulo-color-rojo{
-    color: #dc0d13;
+    color: $c-secundario-rojo;
 }
 .header-conjunto{
-    background: linear-gradient(#18131f, #5e5170);
+    background: linear-gradient(#000000, $c-gradient-violeta);
     color: #ffffff;
     align-items: center;
     max-width: 100%;
@@ -26,14 +26,14 @@ header a {
         grid-template-columns: 1fr 1fr;
     }
     .header-horario {
-        color: #089841;
+        color: $c-primario-verde;
         font-size: 1,8rem;
         font-style: italic;
         font-weight: bold;
         display: block;
     }
     .header-horario-noche{
-        color: #089841;
+        color: $c-primario-verde;
         font-size: 1,8px;
         font-style: italic;
         font-weight: bold;
