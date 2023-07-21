@@ -1,14 +1,14 @@
 .menu-img{
     display: none;
+    &-mobile{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 1rem;
+        width: 100vw;
+    }
 }
 
-.menu-img-mobile{
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 1rem;
-    width: 100vw;
-}
 @media (min-width:1200px){
     .menu-img{
         display: grid;
@@ -17,8 +17,9 @@
         text-align: center;
         margin-bottom: 3rem;
         grid-column: span 2;
+        &-mobile{
+            display: none;
+        }
     }
-    .menu-img-mobile{
-        display: none;
-    }
+    
 }

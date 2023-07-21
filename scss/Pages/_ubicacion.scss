@@ -3,12 +3,13 @@
     align-content: center;
     text-align: center;
     justify-content: center;
-    }
-    .main-ubicacion-caja{
+    &-caja{
         width: 100vw;
     }
-    .main-section-ubicacion{
     
+    }
+
+    .main-section-ubicacion{
         align-items: center;
     }
 

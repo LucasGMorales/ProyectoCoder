@@ -5,13 +5,32 @@
     padding: 4px;;
     transition-property: initial;
     transition-duration: 1s;
-
 }
+.main-form-button{
+    display: flex;
+    align-self: center;
+    text-align: center;
+    background: linear-gradient(#000000, $c-gradient-violeta);
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px;
+    border: 2.5px linear-gradient(#000000, $c-gradient-violeta);;
+    &:hover{
+        background: none;
+        border: 2.5px solid $c-primario-verde;
+        color: $c-primario-verde;
+        border-radius: 20px;
+        padding: 8px;
+        transition-property: initial;
+        transition-duration: 1s;
+        }
+}
+
 @media (min-width:1200px) {
     .btn-color:hover {
         margin-top: -15px;
     }
-    .descripcion {
+    .descripcion{
         background: linear-gradient(#000000, $c-gradient-violeta);
         border-radius: 20px;
         position: absolute;
@@ -22,14 +41,15 @@
         cursor: pointer;
         padding: 10px;
         font-size: 30px;
+        &:hover {
+            background: linear-gradient(#00000000, #5e517000);
+            border: 2px solid $c-primario-verde;
+            color: $c-primario-verde;
+            border-radius: 20px;
+            padding: 8px;
+            transition-property: initial;
+            transition-duration: 1s;
+        }
     }
-    .descripcion:hover {
-        background: linear-gradient(#00000000, #5e517000);
-        border: 2px solid $c-primario-verde;
-        color: $c-primario-verde;
-        border-radius: 20px;
-        padding: 8px;
-        transition-property: initial;
-        transition-duration: 1s;
-    }
+
 }

@@ -16,10 +16,11 @@ header a {
 }
 .header-horario{
     display: none;
+    &-noche{
+        display: none;
+    }
 }
-.header-horario-noche{
-    display: none;
-}
+
 @media (min-width:1200px){
     .header-conjunto {
         display: grid;
@@ -31,13 +32,14 @@ header a {
         font-style: italic;
         font-weight: bold;
         display: block;
+        &-noche{
+            color: $c-primario-verde;
+            font-size: 1,8px;
+            font-style: italic;
+            font-weight: bold;
+            display: block;
+            margin-top: -15px;  
+        }
     }
-    .header-horario-noche{
-        color: $c-primario-verde;
-        font-size: 1,8px;
-        font-style: italic;
-        font-weight: bold;
-        display: block;
-        margin-top: -15px;  
-    }
+
 }
