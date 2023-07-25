@@ -45,6 +45,30 @@ main section img {
   transition-duration: 1s;
 }
 
+.descripcion {
+  background: linear-gradient(#000000, #5e5170);
+  border-radius: 20px;
+  position: absolute;
+  bottom: 40px;
+  color: #fff;
+  font-weight: bold;
+  left: 45%;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+.descripcion:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(94, 81, 112, 0));
+  border: 2px solid #089841;
+  align-items: center;
+  padding: 8px;
+  color: #089841;
+  border-radius: 20px;
+  padding: 10px;
+  transition-property: initial;
+  transition-duration: 1s;
+}
+
 @media (min-width: 1200px) {
   .btn-color:hover {
     margin-top: -15px;
