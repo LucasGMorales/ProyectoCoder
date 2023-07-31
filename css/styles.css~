@@ -1,0 +1,372 @@
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main section img {
+  max-width: 100%;
+}
+
+.btn-color:hover {
+  border: 2.5px solid #089841;
+  color: #089841;
+  border-radius: 20px;
+  padding: 4px;
+  transition-property: initial;
+  transition-duration: 1s;
+}
+
+.main-form-button {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  background: linear-gradient(#000000, #5e5170);
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px;
+  border: 2.5px linear-gradient(#000000, #5e5170);
+}
+.main-form-button:hover {
+  background: none;
+  border: 2.5px solid #089841;
+  color: #089841;
+  border-radius: 20px;
+  padding: 8px;
+  transition-property: initial;
+  transition-duration: 1s;
+}
+
+.descripcion {
+  background: linear-gradient(#000000, #5e5170);
+  border-radius: 20px;
+  position: absolute;
+  bottom: 40px;
+  color: #fff;
+  font-weight: bold;
+  left: 45%;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+.descripcion:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(94, 81, 112, 0));
+  border: 2px solid #089841;
+  align-items: center;
+  padding: 8px;
+  color: #089841;
+  border-radius: 20px;
+  padding: 10px;
+  transition-property: initial;
+  transition-duration: 1s;
+}
+
+@media (min-width: 780px) {
+  .btn-color:hover {
+    margin-top: -15px;
+  }
+  .descripcion {
+    background: linear-gradient(#000000, #5e5170);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 30px;
+  }
+  .descripcion:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(94, 81, 112, 0));
+    border: 2px solid #089841;
+    color: #089841;
+    border-radius: 20px;
+    padding: 8px;
+    transition-property: initial;
+    transition-duration: 1s;
+  }
+}
+footer {
+  background: linear-gradient(#000000, #5e5170);
+  color: #ffffff;
+  align-items: center;
+  max-width: 100%;
+  bottom: 0;
+  width: 100%;
+}
+footer img {
+  max-width: 35px;
+  max-height: 35px;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-img-whatsapp {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.footer-info {
+  position: fixed;
+}
+
+.footer-masa {
+  display: none;
+}
+
+@media (min-width: 780px) {
+  .footer-masa {
+    display: flex;
+    grid-area: masa;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: " telefono masa whatsapp" "direccion masa instagram";
+  }
+}
+header a {
+  color: #089841;
+  text-decoration: none;
+}
+
+.titulo-color-rojo {
+  color: #dc0d13;
+}
+
+.header-conjunto {
+  background: linear-gradient(#000000, #5e5170);
+  color: #ffffff;
+  align-items: center;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+  height: 140px;
+}
+
+.header-horario {
+  display: none;
+}
+.header-horario-noche {
+  display: none;
+}
+
+@media (min-width: 780px) {
+  .header-conjunto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .header-horario {
+    color: #089841;
+    font-size: 1, 8rem;
+    font-style: italic;
+    font-weight: bold;
+    display: block;
+  }
+  .header-horario-noche {
+    color: #089841;
+    font-size: 1, 8px;
+    font-style: italic;
+    font-weight: bold;
+    display: block;
+    margin-top: -15px;
+  }
+}
+header nav {
+  grid-column: span 2;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  grid-column: span 2;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+ul li {
+  display: flex;
+  list-style: none;
+  font-size: 0.9rem;
+  margin-right: 1rem;
+}
+
+@media (min-width: 780px) {
+  header nav {
+    grid-column: span 2;
+  }
+  ul li {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    display: flex;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+}
+.card img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+@media (min-width: 780px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+    margin: 25px;
+  }
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+  footer {
+    position: absolute;
+    margin: 0;
+  }
+}
+@media (min-width: 1075px) {
+  footer {
+    position: relative;
+  }
+}
+.menu-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-main .menu-main-article {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+.menu-main .menu-main-article .menu-titulo {
+  display: block;
+  color: #089841;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #089841;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+main article p {
+  padding-bottom: 1rem;
+  border-color: #dc0d13;
+}
+main article p strong {
+  color: #dc0d13;
+  font-weight: bold;
+}
+
+.strong-verde {
+  color: #089841;
+}
+
+@media (min-width: 780px) {
+  .menu-main {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  .menu-main-article {
+    display: block;
+  }
+  .menu-main-article .menu-titulo {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+.main-ubicacion {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+}
+.main-ubicacion-caja {
+  width: 100vw;
+}
+
+.main-section-ubicacion {
+  align-items: center;
+}
+
+@media (min-width: 780px) {
+  .main-ubicacion-caja {
+    width: 80vw;
+  }
+}
+.main-info {
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.main-info-primtext {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.main-info-segtext {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 1rem;
+}
+.main-info-form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  justify-items: center;
+  text-align: center;
+  gap: 0.2rem;
+}
+
+@media (min-width: 780px) {
+  .main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .main-info-form {
+    width: 60vw;
+  }
+}
+
+/*# sourceMappingURL=styles.css~.map */
