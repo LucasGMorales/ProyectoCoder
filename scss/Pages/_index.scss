@@ -15,7 +15,7 @@
     }
 }
 
-@media (min-width:1200px){
+@media (min-width:780px){
     main{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -36,5 +36,13 @@
             height: 100%;
         }
     }
-
+    footer{
+        position: absolute;
+        margin:0;
+    }
+}
+@media (min-width:1075px){
+    footer{
+        position: relative;
+    }
 }
